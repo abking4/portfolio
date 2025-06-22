@@ -54,15 +54,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+
 document.querySelectorAll('.project__pic.rotating').forEach(fig => {
   const imgs = Array.from(fig.querySelectorAll('img'));
   let index = 0, interval;
 
+  // Ensure first image shows immediately
   function show(i) {
     imgs.forEach((img, j) => {
       img.classList.toggle('active', j === i);
     });
   }
+  show(0);
 
   function rotate() {
     index = (index + 1) % imgs.length;
@@ -70,6 +73,7 @@ document.querySelectorAll('.project__pic.rotating').forEach(fig => {
   }
 
   const autoRotate = () => {
+    stopRotate();
     interval = setInterval(rotate, 3000);
   };
 
@@ -77,17 +81,20 @@ document.querySelectorAll('.project__pic.rotating').forEach(fig => {
     clearInterval(interval);
   };
 
-  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  const isDesktop = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+  if (isDesktop) {
     fig.addEventListener('mouseenter', () => {
-      rotate(); // show next immediately
-      autoRotate();
+      rotate();      // Immediately go to next
+      autoRotate();  // Then keep rotating
     });
     fig.addEventListener('mouseleave', () => {
       stopRotate();
-      show(0); // return to first
+      index = 0;     // Reset index
+      show(0);
     });
   } else {
-    autoRotate();
+    autoRotate();  // Mobile: just start auto-rotation
   }
 });
 
