@@ -34,11 +34,12 @@ $(function() {
 
 
 
-// Cursor effect code separate to keep it safe and intact
 document.addEventListener('DOMContentLoaded', () => {
-  // Detect if primary pointer is fine (desktop-like)
   const isFinePointer = window.matchMedia('(pointer: fine)').matches;
-  if (!isFinePointer) return; // skip blob entirely on touch devices
+  const canHover = window.matchMedia('(hover: hover)').matches;
+
+  // Only initialize blob if the device can truly hover *and* has a fine pointer
+  if (!(isFinePointer && canHover)) return;
 
   const blob = document.querySelector('.blob-cursor');
   if (!blob) return;
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('mousedown', () => blob.classList.add('active'));
   window.addEventListener('mouseup', () => blob.classList.remove('active'));
 });
+
 
 
 document.querySelectorAll('.project__pic.rotating').forEach(fig => {
