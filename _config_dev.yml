@@ -1,0 +1,43 @@
+# Site settings
+name: Austin King
+title: Austin King | Front End Software Engineer
+description: Design-minded front-end software engineer focused on building beautiful interfaces and experiences
+url: https://brittanychiang.com/
+baseurl: ''
+email: 7891.kingab@gmail.com
+cover: https://brittanychiang.com/img/og.png
+logo: https://brittanychiang.com/img/emojis/technologist.png
+resume: https://brittanychiang.com/resume.pdf
+social:
+  - title: email
+    url: mailto:7891.kingab@gmail.com
+  - title: paintings
+    url: https://www.etsy.com/shop/FineArtbyAustinKing?ref=dashboard-header
+  - title: behance
+    url: https://www.behance.net/7891kingabf03e/projects
+  - title: github
+    url: https://github.com/abking4
+  - title: Instagram
+    url: https://www.instagram.com/abking/
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - '*.gemspec'
+  - 'README.md'
+  - 'node_modules'
+  - 'build'
+  - 'gulpfile.js'
+  - 'package.json'
+
+keep_files:
+  - 'CNAME'
+  - '.git'
+  - '.gitignore'
+
+plugins_dir:
+  - jekyll-minifier
+  - jekyll-sitemap

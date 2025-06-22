@@ -1,0 +1,24 @@
+languages:
+  - item: JavaScript
+  - item: TypeScript
+  - item: HTML
+  - item: CSS/Sass
+
+frameworks:
+  - item: React
+  - item: Jekyll
+  - item: Node
+  - item: Wordpress
+
+tools:
+  - item: Git & Github
+  - item: Gulp & Grunt
+  - item: Chrome DevTools
+
+design:
+  - item: Affter Effects
+  - item: InDesign
+  - item: Photoshop
+  - item: XD/Figma
+  - item: Illustrator
+  - item: Wireframing
