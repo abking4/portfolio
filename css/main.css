@@ -1128,6 +1128,14 @@ strong {
   z-index: 9999; /* Keep it on top */
 }
 
+/* Hide blob cursor for touch devices */
+@media (pointer: coarse), (pointer: none) {
+  .blob-cursor {
+    display: none !important;
+  }
+}
+
+
 @keyframes pulse {
   from {
     width: 50px;

@@ -32,10 +32,16 @@ $(function() {
   // rest of your existing scroll, wave-hand, and ScrollReveal code here...
 });
 
+
+
 // Cursor effect code separate to keep it safe and intact
 document.addEventListener('DOMContentLoaded', () => {
+  // Detect if primary pointer is fine (desktop-like)
+  const isFinePointer = window.matchMedia('(pointer: fine)').matches;
+  if (!isFinePointer) return; // skip blob entirely on touch devices
+
   const blob = document.querySelector('.blob-cursor');
-  if (!blob) return; // avoid errors if element missing
+  if (!blob) return;
 
   blob.style.top = '50vh';
   blob.style.left = '50vw';
@@ -45,13 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
     blob.style.left = `${e.clientX}px`;
   });
 
-  window.addEventListener('mousedown', () => {
-    blob.classList.add('active');
-  });
-
-  window.addEventListener('mouseup', () => {
-    blob.classList.remove('active');
-  });
+  window.addEventListener('mousedown', () => blob.classList.add('active'));
+  window.addEventListener('mouseup', () => blob.classList.remove('active'));
 });
 
 
