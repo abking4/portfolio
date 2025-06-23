@@ -96,7 +96,7 @@ document.querySelectorAll('.project__pic.rotating').forEach(fig => {
 
 const typed = new Typed(".autoType", {
   strings : [
-      "clients crack a smile!", 
+      "clients crack a smile once in a while!", 
       "my mockups make the live site!", 
       "my code compiles on the first try!",
       "algorithms behave themselves!",

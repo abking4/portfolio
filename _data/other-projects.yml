@@ -1,6 +1,6 @@
 - name: Superior Catfish Site
   url: https://superiorcatfish.com/
-  description: Working with a team of developers, I carried out the design portion of this UI/UX design while maintaining consistent brand stylings as we navigated their companies rebrand.
+  description: As part of a full company rebrand—including sales sheets, packaging, website, logo, typography, and more—I led the design in close collaboration with a team of developers. Throughout the process, I ensured every digital touchpoint reflected the refreshed brand
   used:
     - thing: Adobe Suite
     - thing: Procreate
@@ -9,7 +9,7 @@
 
 - name: Mississippi College Scholarship Calculator
   url: https://www.mc.edu/offices/financial-aid/scholarships/academic-scholarships
-  description: A calculator built to take input from incoming or perspective students in order to project their scholarship earning for the coming school year.
+  description: A custom-built calculator designed to help prospective and incoming students estimate their potential scholarship awards for the upcoming academic year. By analyzing their input, the tool not only projects likely funding but also highlights additional scholarship opportunities they may qualify for—making financial planning more accessible and personalized.
   used:
     - thing: Sublime Text
     - thing: JavaScript
@@ -36,17 +36,18 @@
     - thing: Creatopy
     - thing: Photoshop
 
-- name: Crowd DJ
-  url: https://github.com/crowddj/crowddj-react
-  code: https://github.com/crowddj/crowddj-react
+- name: Memorial Hospital
+  url: https://wearememorial.com/
   description:
-    A web app that allows people who are at a party or social gathering with a DJ to request songs via their smartphones. The web app allows people to see the currently playing song, request songs, upvote songs, and rate songs so the DJ can see how the crowd is feeling and act accordingly. In other words, Crowd DJ is essentially a crowdsourced music queue. <br>
-    <a class="small" href="http://projects.hackbeanpot.com/2017-projects.html">🏆 Won Best UI/UX Design at Hackbeanpot 2017 🏆</a>
+    Worked on the design and development team for a major hospital's brand refresh. Helped build interactive features on the website to make it easier for users to find doctors and locations.
+    Also created <a class="underline-link" href="https://www.behance.net/gallery/141950645/MH-Business-Cards" target="_blank">print materials</a> that carried the new branding across the full campaign,
+    keeping everything consistent online and off.
+
   used:
-    - thing: React
-    - thing: Sass
-    - thing: Firebase
-    - thing: Spotify API
+    - thing: Illustrator
+    - thing: Photoshop
+    - thing: Vue
+    - thing: XD
 
 - name: Weather Widget
   url: http://quiet-dusk-89245.herokuapp.com/
