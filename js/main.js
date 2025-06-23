@@ -102,7 +102,8 @@ const typed = new Typed(".autoType", {
       "algorithms behave themselves!",
       "CSS grids don't collapse!",
       "a project inquiry says illustration!",
-      "fonts match the tone!"
+      "fonts match the brand tone!",
+      "Photoshop doesn't overload my scratch disk."
     ],
   typeSpeed : 150,
   backSpeed : 150,
