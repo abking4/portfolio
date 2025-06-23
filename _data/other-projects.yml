@@ -27,15 +27,14 @@
     - thing: CSS
     - thing: JavaScript
 
-- name: myNEU Redesign
-  url: http://brittanychiang.com/Redesign-myNEU/
-  code: https://github.com/bchiang7/Redesign-myNEU
-  description: myNEU student portal web prototype for my information science senior project. I conducted a study that aimed to answer the question of how myNEU can be improved to provide students at Northeastern with a better user experience. Informed by usability metrics gathered from user tests, I redesigned and developed a web prototype of myNEU.
+- name: Out of State Targeted Campaign
+  url: https://www.behance.net/gallery/161638437/Out-of-State-Animation
+  description: Built on the idea that getting it right is worth traveling further, the internal marketing department launched this campaign incuding custom landing pages, animated diplay ads, and a full 30 second animated social ad. Fitting a round peg in a square hole doesn't work. Neither does settling on your instate options.
   used:
-    - thing: Jekyll
-    - thing: HTML
-    - thing: SCSS
-    - thing: JavaScript
+    - thing: After Effects
+    - thing: Illustrator
+    - thing: Creatopy
+    - thing: Photoshop
 
 - name: Crowd DJ
   url: https://github.com/crowddj/crowddj-react

@@ -468,6 +468,7 @@ strong {
 .intro__hello,
 .intro__tagline {
   font-size: 2.5rem;
+  min-height: 250px;
 }
 @media screen and (max-width: 1024px) {
   .intro__hello,
@@ -1165,3 +1166,4 @@ strong {
 .footer_logo {
     width: 40px;
 }
+

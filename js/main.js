@@ -1,3 +1,5 @@
+const { color } = require("gulp-cli/lib/shared/options/cli-options");
+
 $(function() {
   const d = new Date();
   const hours = d.getHours();
@@ -31,8 +33,6 @@ $(function() {
 
   // rest of your existing scroll, wave-hand, and ScrollReveal code here...
 });
-
-
 
 document.addEventListener('DOMContentLoaded', () => {
   const isFinePointer = window.matchMedia('(pointer: fine)').matches;
@@ -95,3 +95,20 @@ document.querySelectorAll('.project__pic.rotating').forEach(fig => {
   }
 });
 
+new Typed(".autoType", {
+  strings : [
+      "clients crack a smile!", 
+      "my mockups make the live site!", 
+      "my code compiles on the first try!",
+      "algorithms behave themselves!",
+      "CSS grids don't collapse!",
+      "a project inquiry says illustration!"
+    ],
+  typeSpeed : 150,
+  backSpeed : 150,
+  loop : true,
+  backDelay: 2000,
+  loopCount: Infinity,
+  showCursor: true,
+  cursorChar: `|`,
+});
