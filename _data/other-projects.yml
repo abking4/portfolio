@@ -19,7 +19,7 @@
 
 - name: Southwest Distributors
   url: https://bud4u.com/products/
-  description: envolved in the build of assets for all of their products to be displayed in their product portions of the main site.
+  description: Contributed to the website build by preparing and optimizing visual assets for hundreds of products in the client’s catalog. This involved isolating and cleaning product images for consistent, web-ready presentation across the site’s product pages. The work required attention to detail, batch processing, and close collaboration with the web team to ensure all assets met display and performance standards.
   used:
     - thing: Photoshop
     - thing: Lightroom
@@ -49,68 +49,23 @@
     - thing: Vue
     - thing: XD
 
-- name: Weather Widget
-  url: http://quiet-dusk-89245.herokuapp.com/
-  code: https://github.com/bchiang7/DemoWebApp
-  description: A simple weather app I made at HubSpot's Fall 2016 Web App Workshop with Node.js, Express, and Heroku. I used the OpenWeatherMap API to get weather and forecast data, and then used the current city's coordinates to create a map background that reflected the current city using the Google Maps API.
-  img: weather
+- name: Alliant Construction
+  url: https://www.alliantconstruction.com/
+  description: Collaborated with the creative and development teams during a relaunch of Alliant Construction’s brand presence. Focused on crafting messaging and visual content that aligned with the updated identity across digital and print platforms. Supported the redesign of their website by helping shape the content strategy and user-facing messaging to enhance clarity and engagement.
   used:
-    - thing: JavaScript
+    - thing: Indesign
     - thing: CSS
     - thing: Node.js
-    - thing: Express
-    - thing: Heroku
-    - thing: OpenWeatherMap API
-    - thing: Google Maps API
+    - thing: XD
+    - thing: JavaScript
 
-- name: Personal Website V2
-  url: http://brittanychiang.com/v2
-  code: https://github.com/bchiang7/v2
-  description: Second iteration of my personal website. Designed and developed with a conscious effort to avoid using any superfluous frameworks like Bootstrap.
+- name: Personal Portfolio
+  url: https://austintheking.com/
+  description: I designed and developed this site from the ground up as a digital home for my resume, featured projects, and creative work. Built with Jekyll and Node.js, the site is version-controlled with Git and hosted via GitHub Pages, allowing for easy updates and deployment. I used JavaScript and HTML/CSS to craft a clean, responsive front end tailored for showcasing work to potential employers and collaborators.
   used:
     - thing: Jekyll
-    - thing: Handlebars
-    - thing: SCSS
-    - thing: JavaScript
-    - thing: Github Pages
-
-- name: React Resume
-  url: http://brittanychiang.com/react-profile/
-  code: https://github.com/bchiang7/react-profile/
-  description: An online version of my 2016 resume I made for fun. I was interested in learning React.js, so I found this <a class="underline-link" href="https://medium.com/learning-new-stuff/building-your-first-react-js-app-d53b0c98dc#.1439cdewq">simple tutorial</a> and it kind of spun into this weekend project. I probably didn't need to use React at all, but hey, at least I learned a few things!
-  used:
-    - thing: JavaScript
-    - thing: React
-    - thing: CSS
-
-- name: CourseSource
-  url: http://webdevspring2016-chiangbrittany.rhcloud.com/project/client/#/login
-  code: https://github.com/bchiang7/WebDevSpring2016/tree/master/public/project
-  description: A web application built on the MEAN (MongoDB, Express, Angular, Node) stack for my web development course at Northeastern. I created this web app with the intention of providing Northeastern Students a better experience browsing the courses offered at Northeastern.
-  used:
-    - thing: HTML
-    - thing: CSS
-    - thing: JavaScript
     - thing: Node.js
-    - thing: Angular
-    - thing: Express
-    - thing: MongoDB
-
-- name: NU Women in Tech
-  url: http://nuwit.ccs.neu.edu/
-  code: https://github.com/nuwit/website
-  description: Complete overhaul and redesign of NU Women in Tech's club website using Jekyll, built while serving as web chair on the e-board.
-  used:
-    - thing: Jekyll
-    - thing: HTML
     - thing: CSS
     - thing: JavaScript
-    - thing: Bootstrap
-
-- name: Fontipsums
-  url: http://brittanychiang.com/fontipsums
-  code: https://github.com/bchiang7/fontipsums
-  description: As someone who has an eye for typography, I wanted a way to visually see different font combinations together. I whipped up this simple website to display some of my favorite pairings combined with some fun lorem ipsum variations I found on the web.
-  used:
-    - thing: HTML
-    - thing: SCSS
+    - thing: Git
+    - thing: Github
