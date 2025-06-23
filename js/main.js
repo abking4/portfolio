@@ -1,4 +1,3 @@
-const { color } = require("gulp-cli/lib/shared/options/cli-options");
 
 $(function() {
   const d = new Date();
@@ -95,7 +94,7 @@ document.querySelectorAll('.project__pic.rotating').forEach(fig => {
   }
 });
 
-new Typed(".autoType", {
+const typed = new Typed(".autoType", {
   strings : [
       "clients crack a smile!", 
       "my mockups make the live site!", 
