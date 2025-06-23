@@ -102,7 +102,8 @@ new Typed(".autoType", {
       "my code compiles on the first try!",
       "algorithms behave themselves!",
       "CSS grids don't collapse!",
-      "a project inquiry says illustration!"
+      "a project inquiry says illustration!",
+      "fonts match the tone!"
     ],
   typeSpeed : 150,
   backSpeed : 150,
