@@ -63,7 +63,7 @@ if (!isTouchDevice()) {
   });
 
   let mouseX = 0, mouseY = 0, dotX = 0, dotY = 0;
-  const delay = 0.3;
+  const delay = 0.8;
 
   window.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
