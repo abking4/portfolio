@@ -53,8 +53,8 @@ if (!isTouchDevice()) {
     position: "fixed",
     top: "0px",
     left: "0px",
-    width: "10px",
-    height: "10px",
+    width: "15px",
+    height: "15px",
     borderRadius: "50%",
     backgroundColor: "yellow", // <-- your yellow dot
     pointerEvents: "none",
@@ -63,7 +63,7 @@ if (!isTouchDevice()) {
   });
 
   let mouseX = 0, mouseY = 0, dotX = 0, dotY = 0;
-  const delay = 0.12;
+  const delay = 0.3;
 
   window.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
