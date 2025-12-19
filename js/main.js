@@ -33,27 +33,54 @@ $(function() {
   // rest of your existing scroll, wave-hand, and ScrollReveal code here...
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const isFinePointer = window.matchMedia('(pointer: fine)').matches;
-  const canHover = window.matchMedia('(hover: hover)').matches;
 
-  // Only initialize blob if the device can truly hover *and* has a fine pointer
-  if (!(isFinePointer && canHover)) return;
 
-  const blob = document.querySelector('.blob-cursor');
-  if (!blob) return;
 
-  blob.style.top = '50vh';
-  blob.style.left = '50vw';
 
-  window.addEventListener('mousemove', e => {
-    blob.style.top = `${e.clientY}px`;
-    blob.style.left = `${e.clientX}px`;
+
+// --- Cursor dot logic ---
+function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+}
+
+if (!isTouchDevice()) {
+  const dot = document.createElement("div");
+  dot.classList.add("cursor-dot");
+  document.body.appendChild(dot);
+
+  // Style the dot
+  Object.assign(dot.style, {
+    position: "fixed",
+    top: "0px",
+    left: "0px",
+    width: "10px",
+    height: "10px",
+    borderRadius: "50%",
+    backgroundColor: "yellow", // <-- your yellow dot
+    pointerEvents: "none",
+    zIndex: 9999,
+    transform: "translate(-50%, -50%)",
   });
 
-  window.addEventListener('mousedown', () => blob.classList.add('active'));
-  window.addEventListener('mouseup', () => blob.classList.remove('active'));
-});
+  let mouseX = 0, mouseY = 0, dotX = 0, dotY = 0;
+  const delay = 0.12;
+
+  window.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+
+  function animate() {
+    dotX += (mouseX - dotX) * delay;
+    dotY += (mouseY - dotY) * delay;
+    dot.style.transform = `translate(${dotX}px, ${dotY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(animate);
+  }
+  animate();
+}
+
+
+
 
 
 
