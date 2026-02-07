@@ -28,6 +28,10 @@ $(function() {
     }
 
     body.classList.toggle('night', !isChecked);
+    // Update cursor color when theme changes
+    if (typeof updateCursorColor === 'function') {
+      updateCursorColor();
+    }
   });
 
   // rest of your existing scroll, wave-hand, and ScrollReveal code here...
@@ -48,7 +52,13 @@ if (!isTouchDevice()) {
   dot.classList.add("cursor-dot");
   document.body.appendChild(dot);
 
-  // Style the dot
+  // Function to update cursor color based on theme
+  const updateCursorColor = () => {
+    const isNight = document.body.classList.contains('night');
+    dot.style.backgroundColor = isNight ? '#FFD700' : '#00B4D8'; // Yellow for night, blue for day
+  };
+
+  // Initial style
   Object.assign(dot.style, {
     position: "fixed",
     top: "0px",
@@ -56,11 +66,13 @@ if (!isTouchDevice()) {
     width: "12px",
     height: "12px",
     borderRadius: "50%",
-    backgroundColor: "yellow", // <-- your yellow dot
     pointerEvents: "none",
     zIndex: 9999,
     transform: "translate(-50%, -50%)",
   });
+  
+  // Set initial color based on current theme
+  updateCursorColor();
 
   let mouseX = 0, mouseY = 0, dotX = 0, dotY = 0;
   const delay = 0.1;
