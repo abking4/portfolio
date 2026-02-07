@@ -55,7 +55,7 @@ if (!isTouchDevice()) {
   // Function to update cursor color based on theme
   const updateCursorColor = () => {
     const isNight = document.body.classList.contains('night');
-    dot.style.backgroundColor = isNight ? '#FFD700' : '#00B4D8'; // Yellow for night, blue for day
+    dot.style.backgroundColor = isNight ? '#FFD700' : '#007bff'; // Yellow for night, brand blue for day
   };
 
   // Initial style
