@@ -1,3 +1,13 @@
+- name: North Alabama Fabricating Company
+  url: https://staging.nafcofab.com/
+  description: Developed a high-performance headless website using vanilla JavaScript and Web Components, featuring smooth GSAP animations and Lenis scroll. Built with Webpack and Babel for optimized, cross-browser performance. Implemented responsive layouts with CSS Grid/Flexbox, and intigrated server-side prerendering. Ensured WCAG 2.1 AA accessibility and integrated with WordPress REST API for dynamic content, prioritizing maintainability and performance across all devices.
+  used:
+    - thing: Wordpress
+    - thing: Nginx
+    - thing: JavaScript
+    - thing: Lenis
+    - thing: GSAP
+
 - name: Superior Catfish Site
   url: https://superiorcatfish.com/
   description: As part of a full company rebrand—including sales sheets, packaging, website, logo, typography, and more—I led the design in close collaboration with a team of developers. Throughout the process, I ensured every digital touchpoint reflected the refreshed brand
