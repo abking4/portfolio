@@ -3,17 +3,21 @@ languages:
   - item: TypeScript
   - item: HTML
   - item: CSS/Sass
+  - item: SQL
+  - item: Java
 
 frameworks:
   - item: React
   - item: Jekyll
   - item: Node
   - item: Wordpress
+  - item: nginx
 
 tools:
   - item: Git & Github
   - item: Gulp & Grunt
   - item: Chrome DevTools
+  - item: Npm
 
 design:
   - item: Affter Effects
